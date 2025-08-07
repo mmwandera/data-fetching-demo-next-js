@@ -13,11 +13,11 @@ export default async function UsersServer() {
 
         return (
         <>
-            <h1>Users</h1>
-            <ul>
+            <h1 className="text-4xl mb-8 ">Users</h1>
+            <ul className="bg-slate-900 p-8">
                 {users.map((user) => (
                     <li key={user.id} style={{ marginBottom: "3rem" }}>
-                        <h2>{user.name}</h2>
+                        <h2 className="text-2xl">{user.name}</h2>
                         <p>{user.email}</p>
                         <p>{user.phone}</p>
                     </li>
